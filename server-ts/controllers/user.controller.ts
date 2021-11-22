@@ -1,14 +1,13 @@
-import {Request, Response} from "express";
+import {Request, Response} from "express-serve-static-core";
 
-exports.login = async (req: Request, res: Response) => {
-
-}
-
-exports.logout = async (req: Request, res: Response) => {
+export const login = async (req: Request, res: Response) => {
 
 }
 
-exports.register = async (req: Request, res: Response) => {
-    
+export const logout = async (req: Request, res: Response) => {
+
+}
+export const register = async (req: Request, res: Response) => {
+
 }
 
