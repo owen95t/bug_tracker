@@ -2,6 +2,7 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan'
 import cors from 'cors'
+import ConnectDB from './configs/db'
 
 import router from './routes/user.routes'
 
@@ -12,7 +13,8 @@ const app = express();
 app.use(cookieParser());
 app.use(logger('dev'));
 app.use(cors());
-
+//DB
+ConnectDB();
 //ROUTES
 app.use('/user', router)
 

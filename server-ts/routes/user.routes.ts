@@ -4,7 +4,7 @@ const userRouter = express.Router();
 
 userRouter
     .route('/')
-    .get((req: Request, res: Response) => {
+    .get((req: Request, res: Response): Response => {
         return res.status(200).json({message: 'Root of /user'})
     })
 

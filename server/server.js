@@ -11,7 +11,11 @@ const swaggerUI = require('swagger-ui-express');
 //const swaggerJSON = require('./swagger.json');
 
 //ROUTES
-const userRoutes = require('./routes/user_router')
+const userRoutes = require('./routes/user.routes')
+
+
+//ROUTER
+app.use('/user', userRoutes)
 
 //SWAGGER SETUP
 //app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJSON, {explorer: true}));
